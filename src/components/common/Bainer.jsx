@@ -17,7 +17,6 @@ const Bainer = () => {
       <div className="grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
         {popularItems.map((item) => {
           const {id,title,price,firstImg} = item
-          const
         return (
           <Card key={id} >
           <Card.Img variant="top" src={firstImg} />
