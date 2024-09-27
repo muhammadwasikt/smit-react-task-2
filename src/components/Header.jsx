@@ -2,7 +2,7 @@ import { RiArrowRightDoubleFill } from "react-icons/ri";
 
 const Header = () => {
   return (
-    <div className=" sticky top-0">
+    <div>
       <div className="bg-themeColor p-4 w-[100%]"> 
         <div className="flex items-center">
       <ul  className="flex gap-x-7 overflow-auto w-[100%] text-nowrap text-textColor">
