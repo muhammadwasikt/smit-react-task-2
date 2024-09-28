@@ -2,6 +2,7 @@ import Bainer from "../components/common/Bainer";
 import Header from "../components/Header"
 import { IoIosArrowDropright } from "react-icons/io";
 import background from "/assest/images/background.jpg";
+import DetailPopup from "../components/common/DetailPopup";
 
 
 
@@ -15,6 +16,7 @@ const Home = () => {
         <IoIosArrowDropright className="text-themeColor text-[34px]"/>
         </div>
         <Bainer />
+        <DetailPopup />
     </div>
     </>
   )
