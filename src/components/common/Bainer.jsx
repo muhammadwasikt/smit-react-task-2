@@ -18,8 +18,9 @@ const Bainer = () => {
   console.log(cardId)
   console.log(isFullDescription)
   return (
-    <div className='pt-2'>
+    <>
       <DetailPopup fullDescription={isFullDescription} setFullDescription={setIsFullDescription} cardId={cardId}/>
+      <div className={isFullDescription ? 'mt-[-45vh] ' : 'pt-2'}>
       <div className="w-[100%] py-4">
       <div className='flex items-center gap-x-3' >
       <img className='w-4' src={icon} alt="" />
@@ -41,7 +42,7 @@ const Bainer = () => {
       }
       </div>
       </div>
-
+      </>
   )
 }
 export default Bainer

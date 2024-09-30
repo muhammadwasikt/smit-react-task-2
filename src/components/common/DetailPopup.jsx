@@ -18,10 +18,10 @@ const DetailPopup = ({fullDescription , setFullDescription , cardId}) => {
     {
         if (singalData){
             console.log(singalData)
-        const {title , description , firstImg , imgUrl , price} = singalData
+        const {title , description , imgUrl , price} = singalData
     return(
-        <div className='sticky top-36 flex justify-center z-10 w-[100%] '>
-        {fullDescription ? <div className='cursor-pointer rounded-xl absolute flex shadow-2xl lg:max-w-[600px] md:max-w-[600px] sm:max-w-[400px] w-[100%] pt-4 pb-3 px-3 bg-textColor max-md:flex-col'>
+        <div className={fullDescription && 'sticky top-[100px] max-sm:top-2 z-10 w-[100%] '}>
+        {fullDescription ? <div className='relative mx-auto cursor-pointer rounded-xl flex shadow-2xl lg:max-w-[600px] md:max-w-[600px] sm:max-w-[400px] w-[100%] pt-4 pb-3 px-3 bg-textColor max-md:flex-col'>
           <IoMdCloseCircleOutline className='absolute right-4 top-3 text-2xl' onClick={closeFullDescription} />
           <div>
             <img src={imgUrl[isImgUrl]} className= 'max-md:w-[100%] max-md:object-cover rounded-lg max-w-[500px] h-[300px] object-contain' alt="" />
